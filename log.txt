@@ -1,1 +1,1 @@
-16:04:06.591 INFO: 3.0
+16:22:26.641 INFO: CalculatorOutput.showResult() 3.0
