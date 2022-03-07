@@ -22,9 +22,6 @@ public class CalculatorCalculation implements Calculation{
                 result = multiplication.executeOperation(firstNumber, secondNumber);
                 break;
             case "/":
-                if (secondNumber == 0) {
-                    throw new ArithmeticException();
-                }
                 result = division.executeOperation(firstNumber, secondNumber);
                 break;
         }

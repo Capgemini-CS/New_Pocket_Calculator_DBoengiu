@@ -39,8 +39,15 @@ public class Main {
         secondNumber = input.getSecondNumber();
         operator = input.getOperator();
 
+        double result = 0;
+
         CalculatorCalculation calculation = new CalculatorCalculation();
-        double result = calculation.doCalculation(firstNumber, secondNumber, operator);
+        try {
+            result = calculation.doCalculation(firstNumber, secondNumber, operator);
+        } catch (ArithmeticException e) {
+            Logger.error("You have tried to divide by zero");
+        }
+
 
         CalculatorOutput output = new CalculatorOutput();
         output.showResult(result);
